@@ -13,6 +13,8 @@ Apache or nginx
 Php
 PHPMAiler
 
+For follow the guide installation it is recommended to put the readm in RAW mode
+
 Installation with nginx, MariaDB and PHP.
 
 Installation and configuration MariaDB
