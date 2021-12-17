@@ -1,0 +1,283 @@
+.logoheader
+{
+    text-align: left;
+    margin-top: 5px;
+}
+
+.logologin
+{
+    text-align: center;
+}
+
+nav
+{
+    font-size: 30px;
+}
+.navbutton
+{
+    text-align: center;
+    margin-top: -65px;
+}
+
+#logoutbutton
+{
+    text-align: right;
+    margin-top: -35px;
+    margin-right: 50px;
+}
+
+header
+{
+    background-color: black;
+    border-top: solid orangered;
+    border-bottom: solid orangered;
+    height: 94px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 0px;
+    height: 94px;
+    z-index:2;
+}
+
+body
+{
+    background-image: url("background.png");
+    background-repeat: repeat;
+    color: white; /* Le texte de la page sera blanc */
+}
+
+section
+{
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    right: 0px;
+    bottom: 20%;
+}
+
+.login
+{
+    text-align: center;
+    color: white;
+}
+
+.login form input[type=password] 
+{
+    background: transparent;
+    border: none;
+    width:350px;
+    height:50px;;
+    text-align: center;
+    margin : 0 auto;
+    color: black;
+}
+
+.loginpassword
+{
+    background-image:url(loginbutton.png);
+    background-position:center;
+    width:350px;
+    height:50px;;
+    text-align: center;
+    margin : 0 auto;
+    color: black;
+}
+
+.login form input[type=username] 
+{
+    background: transparent;
+    border: none;
+    width:350px;
+    height:50px;;
+    text-align: center;
+    margin : 0 auto;
+    color: black;
+}
+
+.loginusername
+{
+    background-image:url(loginbutton.png);
+    background-position:center;
+    width:350px;
+    height:50px;;
+    text-align: center;
+    margin : 0 auto;
+    color: black;
+}
+
+.login form input[type=submit] 
+{
+    background: transparent;
+    border: none;
+    width:350px;
+    height:50px;;
+    text-align: center;
+    margin : 0 auto;
+    color: white;
+}
+
+.loginbutton
+{
+    background-image:url(loginbuttonsignin.png);
+    background-position:center;
+    width:350px;
+    height:50px;;
+    text-align: center;
+    margin : 0 auto;
+    color: white;
+}
+
+h2
+{
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+    border: white groove;
+    border-width: thick;
+}
+
+footer
+{
+    border-top: solid orangered;
+    border-bottom: solid orangered;
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    height: 94px;
+    z-index:1;
+}
+
+.powered
+{
+    text-align: center;
+    margin-top: 35px;
+}
+
+.onlinefooter
+{
+    text-align: left;
+    margin-top: -17px;
+    margin-left: 20px;
+}
+
+#ipp
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+#profile
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+#certificate
+{
+    text-align: center;
+    font-size: 30px;
+    margin-top: -50px;
+}
+.certificateformca
+{
+    width: 960px;
+    height: 540px;
+    border: 2px solid white;
+    text-align: left;
+    white-space : normal;
+    overflow: scroll;
+    margin: 0 auto;
+}
+
+.certificateformkey
+{
+    width: 960px;
+    height: 540px;
+    border: 2px solid white;
+    text-align: left;
+    white-space : normal;
+    overflow: scroll;
+    margin: 0 auto;
+}
+
+.certificategenerationlog
+{
+    text-align: center;
+}
+#status
+{
+    text-align: center;
+}
+
+.certificaterevoke
+{
+    text-align: center;
+}
+
+#serverbutton
+{
+    text-align: center;
+}
+
+.configovpn
+{
+    width: 960px;
+    height: 540px;
+    border: 2px solid white;
+    text-align: left;
+    white-space : normal;
+    overflow: scroll;
+    margin: 0 auto;
+}
+
+.installconf
+{
+    width: 960px;
+    height: 540px;
+    border: 2px solid white;
+    text-align: left;
+    white-space : normal;
+    overflow: scroll;
+    margin: 0 auto;
+}
+
+.install
+{
+    text-align: center;
+}
+
+.version
+{
+    text-align: right;
+    margin-top: -18px;
+    margin-right: 25px;
+}
+
+pre {
+    display: inline;
+    margin: 0;
+}
+
+.acertificateformca
+{
+    width: 960px;
+    height: 540px;
+    border: 2px solid white;
+    text-align: left;
+    white-space : normal;
+    overflow: scroll;
+    margin: 0 auto;
+}
+
+.forgetpassword
+{
+    text-align: center;
+}
