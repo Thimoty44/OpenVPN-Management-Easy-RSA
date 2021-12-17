@@ -4,6 +4,9 @@ Welcome in my repository of OpenVPN Management is a web solution to mane your Op
 
 I am Thimoty I studdy in networ and system and this is my first website developped in php. I made it to make management of openvpn server with easy rsam ore easy to manage. If you have feedback I will take it. And if you find out bug tell me. Hope this management interface gonna help.
 
+If you want support my work you can also donate on my paypal :
+https://www.paypal.com/paypalme/thimoty44?country.x=FR&locale.x=fr_FR
+
 Requirements
 Mysql or mariadb
 Apache or nginx
