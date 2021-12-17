@@ -92,6 +92,8 @@ server {
 We delete the default config of nginx
 rm /etc/nginx/sites-enabled/default
 
+IF YOU CAN YOU SHOULD BETTER ENABLE HTTPS
+
 We verify our configuration nginx is good
 nginx -t
 
