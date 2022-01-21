@@ -44,49 +44,29 @@
 									<?php
 									/* Generation of the OVPN config */
 									echo "
-													client
-													<br></br>
-													dev tun
-													<br></br>
-													remote ".$ipserver." ".$portserver."
-													<br></br>
-													resolv-retry infinite
-													<br></br>
-													nobind
-													<br></br>
-													persist-key
-													<br></br>
-													persist-tun
-													<br></br>
-													mute-replay-warnings
-													<br></br>
-													remote-cert-tls server
-													<br></br>
-													verb 4
-													<br></br>
-													auth ".$auth."
-													<br></br>
-													cipher ".$cipher."
-													<br></br>
-													user nobody
-													<br></br>
-													group nogroup
-													<br></br>
-													dev-type tun
-													<br></br>
-													proto ".$protoserver."
-													<br></br>
-													comp-lzo ".$complzo."
-													<br></br>";
+													client<br>
+													dev tun<br>
+													remote ".$ipserver." ".$portserver."<br>
+													resolv-retry infinite<br>
+													nobind<br>
+													persist-key<br>
+													persist-tun<br>
+													mute-replay-warnings<br>
+													remote-cert-tls server<br>
+													verb 4<br>
+													auth ".$auth."<br>
+													cipher ".$cipher."<br>
+													user nobody<br>
+													group nogroup<br>
+													dev-type tun<br>
+													proto ".$protoserver."<br>
+													comp-lzo ".$complzo."<br>";
 										if ($tls == "true") {
-														echo "key-direction 1
-														<br></br>
-													&ltca&gt
-													<br></br>";
+														echo "key-direction 1<br>
+													&ltca&gt<br>";
 													} else {
-														echo "<br></br>
-													&ltca&gt
-													<br></br>";
+														echo "<br>
+													&ltca&gt<br>";
 													}
 										$caaform =  'ca.crt';
 										$caafilepath = "".$patheasyrsaopenvpn."pki/";
@@ -94,17 +74,15 @@
 										/* Verification */
 										if (file_exists($caafilepath .$caaform)) {
 											while ( $caafdata = fgets($caaf, 1000) ) {
-											echo '<pre>'.$caafdata.'</pre>';
+											echo ''.$caafdata.'<br>';
 											}
 										}
 										else {
     										echo "<p style='color:red;''>The authorities certificate dosen't exist !</p>.";
 
     									}
-    									echo "&lt/ca&gt
-    										  <br></br>
-    										  &ltcert&gt
-    										  <br></br>";
+    									echo "&lt/ca&gt<br>
+    										  &ltcert&gt<br>";
     									/* Show certificate */
 	    								$caformca =  htmlspecialchars($_POST['Certificate']).'.crt';
 										$cafilepathca = "".$patheasyrsaopenvpn."pki/issued/";
@@ -112,7 +90,7 @@
 										/* Verification if certificate exist */
 										if (file_exists($cafilepathca .$caformca)) {
 											while ( $cafdataca = fgets($cafca, 1000) ) {
-											echo '<pre>' . htmlspecialchars($cafdataca) . '</pre>';
+											echo '' . htmlspecialchars($cafdataca) . '<br>';
 											}
 										}
 										else {
@@ -120,10 +98,8 @@
 
     									}
 
-    									echo "&lt/cert&gt
-    										  <br></br>
-    										  &ltkey&gt
-    										  <br></br>";
+    									echo "&lt/cert&gt<br>
+    										  &ltkey&gt<br>";
 
     									/* Show key */
 										$caformkey =  htmlspecialchars($_POST['Certificate']).'.key';
@@ -132,7 +108,7 @@
 										/* Verification if key exist */
 										if (file_exists($cafilepathkey .$caformkey)) {
 											while ( $cafdatakey = fgets($cafkey, 1000) ) {
-											echo '<pre>' . htmlspecialchars($cafdatakey) . '</pre>';
+											echo '' . htmlspecialchars($cafdatakey) . '<br>';
 											}
 										}
 										else {
@@ -141,9 +117,8 @@
     									}
     									echo "&lt/key&gt";
     									if ($tls == "true") {
-    										echo "<br></br>
-    										  &lttls-auth&gt
-    										  <br></br>";
+    										echo "<br>
+    										  &lttls-auth&gt<br>";
     										/* Show tls key */
 	    									$takeyform =  'ta.key';
 											$takeyfilepath = "".$patheasyrsaopenvpn."pki/";
@@ -151,7 +126,7 @@
 											/* Check if tls key exist */
 											if (file_exists($takeyfilepath .$takeyform)) {
 												while ( $takeyfdata = fgets($takeyf, 1000) ) {
-												echo '<pre>' .$takeyfdata. '</pre>';
+												echo '' .$takeyfdata. '<br>';
 												}
 											}
 											else {
